@@ -287,6 +287,6 @@ for event in longpoll.listen():
 					user_profile_info = vk_session.method('users.get', {"user_ids":user_id})[0]
 					text = 'Вы вынюхали дневную дозу бебры, '+str(user_profile_info['first_name'])+" "+str(user_profile_info['last_name'])
 					sender(chat_id,text)
-			elif message.startswith('!voice'):
-				sender(chat_id,'Жду голосовое..')
-				voice = True
+			# elif message.startswith('!voice'):
+			# 	sender(chat_id,'Жду голосовое..')
+			# 	voice = True
